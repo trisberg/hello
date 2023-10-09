@@ -1,11 +1,13 @@
 specVersion: 0.35.0
 name: hello
 runtime: springboot
+registry: docker.io/springdeveloper
+image: docker.io/springdeveloper/hello
 created: 2023-10-09T10:22:02.689429-04:00
 build:
   buildEnvs:
   - name: BP_NATIVE_IMAGE
-    value: "false"
+    value: "true"
   - name: BP_JVM_VERSION
     value: "17"
   - name: BP_MAVEN_BUILD_ARGUMENTS
